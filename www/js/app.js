@@ -4,7 +4,8 @@ angular.module('App', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'firebase'
 ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -15,4 +16,5 @@ angular.module('App', [
       .otherwise({
         redirectTo: '/'
       });
+
   });
