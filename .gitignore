@@ -3,6 +3,7 @@ dist
 .tmp
 .sass-cache
 www/bower_components
+platforms
 
 # IntelliJ files
 .idea
