@@ -9,14 +9,12 @@ angular.module('App')
     ];
 
 
-        var games = [];
-
         var gamesUrl = 'https://loddenthinks.firebaseio.com/';
         var gamesRef = new Firebase(gamesUrl);
-        angularFire(gamesRef, $scope, "games");
+        angularFire(gamesRef, $scope, "gameRoom");
 
         $scope.addGame = function(name){
             var game = {'name': name};
-            games.splice(0,0,game);
+            $scope.gameRoom.games.splice($scope.gameRoom.games.length,0,game);
         }
   });
